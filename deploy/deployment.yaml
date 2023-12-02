@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jerry-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jerry-app
+  template:
+    metadata:
+      labels:
+        app: jerry-app
+    spec:
+      containers:
+        - name: jerry-app
+          image: registry.cn-hangzhou.aliyuncs.com/kipchoge-test/kipchoge-test-repo:1.0
+          ports:
+            - containerPort: 9999
