@@ -1,7 +1,7 @@
 # 简单的镜像构建以及 K8S 部署
 
 
-## 目的：讲一个 HTTP 服务部署在 K8S，对公网暴露
+## 目的：将一个 HTTP 服务部署在 K8S，对公网暴露
 
 
 ## 流程
@@ -88,7 +88,7 @@ spec:
     spec:
       containers:
         - name: jerry-app
-          image: registry.cn-hangzhou.aliyuncs.com/kipchoge-test/kipchoge-test-repo:1.0
+          image: registry.cn-hangzhou.aliyuncs.com/xxx-test/xxx-test-repo:1.0
           ports:
             - containerPort: 9999
 
